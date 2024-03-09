@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,20 +9,203 @@
     <!-- Font awesome -->
     <script src="https://kit.fontawesome.com/9e2f380490.js" crossorigin="anonymous"></script>
 
-    <!-- Google Font -->
+    <!-- Google Font manrope -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
 
     <!-- Tailwend css and DaisyUL link -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
     <!--  -->
+    <style>
+        .font-manrope {
+            font-family: "Manrope", sans-serif;
 
+        }
+
+        .bg-banner {
+
+            min-height: 550px;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Hockey’s</h1>
+    <header class="max-w-[1170px] m-auto font-manrope py-14 px-2">
+        <!-- nav area -->
+
+        <div class="navbar bg-base-100 p-0">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Pages</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
+                </div>
+                <a class="btn btn-ghost text-4xl font-extrabold">Hockey’s</a>
+            </div>
+            <!--  -->
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a>Home</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Pages</a></li>
+                    <li><a>Blog</a></li>
+                    <li><a>Contact</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end">
+                <a class=" hidden md:block lg:block " href="#"><i
+                        class="fa-solid fa-magnifying-glass text-2xl font-bold"></i></a>
+                <a class="btn bg-[#ff4240] text-white ml-6 text-2xl font-bold">Get Ticket</a>
+            </div>
+        </div>
+
+        <!-- banner area -->
+
+        <div class="">
+            <div class="carousel w-full rounded-2xl py-8">
+
+                <!-- slide1 -->
+                <div id="slide1" class="carousel-item relative w-full">
+                    <img src="Images/1.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide2" class="btn btn-circle">❮</a>
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+
+                <!-- slide2 -->
+                <div id="slide2" class="carousel-item relative w-full">
+                    <img src="https://daisyui.com/images/stock/photo-1414694762283-acccc27bca85.jpg" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1" class="btn btn-circle">❮</a>
+                        <a href="#slide1" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+        <!-- Professional Hockeys Club area -->
+        <section class="max-w-[1170px] py-14 m-auto font-manrope text-center px-2">
+            <hr class="border-dashed border-[1px]">
+            <div class="py-8 space-y-6">
+                <h3 class="text-4xl font-extrabold py-">Professional Hockeys Club</h3>
+                <p class="font-medium ">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat
+                    dolor. Purus urna in sit nullam proin. </p>
+            </div>
+            <hr class="border-dashed border-[1px]">
+
+            <!-- Radial progress container -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+                <!-- cadr 1 -->
+                <div class="card  bg-base-100 ">
+                    <figure class="px-10 pt-10">
+                        <div class="radial-progress size-32 text-red-600 " style="--value:87;" role="progressbar">
+                            <p class="text-black font-extrabold text-[28px]">87%</p>
+                        </div>
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title font-semibold text-[20px]">Prayer Facility</h2>
+                        <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
+
+                    </div>
+                </div>
+
+
+                <!-- cadr 2 -->
+                <div class="card  bg-base-100 ">
+                    <figure class="px-10 pt-10">
+                        <div class="radial-progress size-32 text-[#49d293] " style="--value:95;" role="progressbar">
+                            <p class="text-black font-extrabold text-[28px]">95%</p>
+                        </div>
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title font-semibold text-[20px]">Experienced Coach</h2>
+                        <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
+
+                    </div>
+                </div>
+
+                <!-- cadr 3 -->
+                <div class="card  bg-base-100 ">
+                    <figure class="px-10 pt-10">
+                        <div class="radial-progress size-32 text-[#ffb546] " style="--value:90;" role="progressbar">
+                            <p class="text-black font-extrabold text-[28px]">90%</p>
+                        </div>
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title font-semibold text-[20px]">Senior Player</h2>
+                        <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
+
+                    </div>
+                </div>
+
+
+                <!-- cadr 3 -->
+                <div class="card  bg-base-100 ">
+                    <figure class="px-10 pt-10">
+                        <div class="radial-progress size-32 text-[#4c8df1] " style="--value:80;" role="progressbar">
+                            <p class="text-black font-extrabold text-[28px]">80%</p>
+                        </div>
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title font-semibold text-[20px]">Training Ground</h2>
+                        <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Program Sections Club area -->
+
+        <section class="max-w-[1170px] py-14 m-auto font-manrope text-center px-2">
+            <hr class="border-dashed border-[1px]">
+            <div class="py-8 space-y-6">
+                <h3 class="text-4xl font-extrabold py-">Program Sections</h3>
+            <p class="font-medium ">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+            </div>
+            <hr class="border-dashed border-[1px]">
+        </section>
+
+    </main>
+
+
+
+
+
+
+
+    <!-- <section class="max-w-[1170px] py-14 m-auto font-manrope text-center px-2">
+            <hr class="border-dashed border-[1px]">
+            <div class="py-8 space-y-6">
+                <h3 class="text-4xl font-extrabold py-">Professional Hockeys Club</h3>
+            <p class="font-medium ">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+            </div>
+            <hr class="border-dashed border-[1px]">
+        </section> -->
+
+    <footer></footer>
+
 </body>
+
 </html>
